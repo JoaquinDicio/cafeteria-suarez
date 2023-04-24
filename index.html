@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/759a8eedd2.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- normalize -->
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <!-- my css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- my js -->
+    <script src="./js/main.js"></script>
+    <!-- favicon -->
+    <link rel="icon" href="./img/favicon/favicon.png" />
+    <!-- description -->
+    <meta
+      name="description"
+      content="Disfrutá de café de calidad y repostería artesanal en nuestro prestigioso café. Un ambiente tranquilo para relajarte y disfrutar del amor al primer sorbo."
+    />
+    <title>Home - Cafe Suarez</title>
+  </head>
+
+  <body onload="init()">
+    <header
+      id="header"
+      class="navbar d-flex justify-content-between align-items-center"
+    >
+      <div class="d-flex align-items-center">
+        <h1 class="brand">Cafe Suarez</h1>
+        <i class="fa-solid fa-mug-hot"></i>
+      </div>
+      <nav>
+        <ul class="d-flex">
+          <li class="navbar-item selected"><a href="./index.html">Home</a></li>
+          <li class="navbar-item">Nosotros</li>
+          <li class="navbar-item"><a href="./galeria.html">Geleria</a></li>
+          <li class="navbar-item">Contacto</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="home-intro">
+        <div class="bg-opaco">
+          <div
+            class="home-content d-flex flex-column justify-content-center align-items-center"
+          >
+            <h2 class="m-0 text-center">Cafe Suarez</h2>
+            <p class="m-0 text-center">Experimentá el amor al primer sorbo</p>
+            <div class="underline"></div>
+            <button class="btn-classic more-info">Saber mas</button>
+          </div>
+        </div>
+      </section>
+      <section
+        class="coffe-types d-flex justify-content-center align-items-center flex-column"
+      >
+        <div class="d-flex flex-column align-items-center coffe-types-header">
+          <h2 class="text-center section-title">
+            +10 tipos de cafe distintos.
+          </h2>
+          <div class="underline"></div>
+        </div>
+        <div class="coffe-types-content d-flex justify-content-center">
+          <div class="coffe-types-img">
+            <img src="./img/fotohecha.png" alt="Bolsas de cafe distintas" />
+          </div>
+          <div class="coffe-types-info flex-column">
+            <div>
+              <h3>Cafe Molido Italiano</h3>
+              <p>
+                El café molido italiano es una deliciosa y aromática opción para
+                aquellos amantes del café que buscan una experiencia auténtica y
+                de calidad. Italia es conocida por su cultura del café, este es
+                el resultado de esta tradición.
+              </p>
+            </div>
+            <div>
+              <h3>Cafe Moka Frances</h3>
+              <p>
+                Una mezcla de granos de café 100% arábica seleccionados
+                cuidadosamente y tostados a la perfección para crear una
+                experiencia de café suave y equilibrada. Esta mezcla es perfecta
+                para preparar en una cafetera Moka.
+              </p>
+            </div>
+            <div>
+              <h3>Cafe Molido Intenso 1933</h3>
+              <p>
+                El Café Molido Intenso 1933 es una mezcla de granos de café
+                arábica y robusta cuidadosamente seleccionados y tostados a la
+                perfección para crear un café con un sabor intenso y cuerpo
+                completo. Este café es perfecto para aquellos que buscan una
+                experiencia de café fuerte y auténtica.
+              </p>
+            </div>
+            <button class="btn-secondary">Ver todos</button>
+          </div>
+        </div>
+      </section>
+      <div class="section-divider">
+        <div
+          class="bg-section-divider d-flex justify-content-center align-items-center"
+        >
+          <div>
+            <p class="section-divider-text">
+              Hasta 25% de descuento en todos los productos.
+            </p>
+            <p>
+              No te pierdas las ofertas en productos selecionados. Experimentá
+              el amor al primer sorbo.
+            </p>
+          </div>
+          <button class="btn-classic">Ver Ofertas</button>
+        </div>
+      </div>
+      <section class="home-gallery">
+        <div
+          class="home-gallery-content d-flex justify-content-center align-items-center flex-column"
+        >
+          <h2 class="section-title">
+            La primera impresion entra por los ojos.
+          </h2>
+          <div class="underline"></div>
+          <div class="home-mini-gallery d-flex justify-content-center">
+            <div>
+              <img src="./img/cafe-granos.webp" alt="foto de cafe" />
+            </div>
+            <div>
+              <img src="./img/coffee-171653__340.jpg" alt="foto de cafe" />
+            </div>
+            <div>
+              <img
+                src="./img/istockphoto-1128647043-612x612.jpg"
+                alt="foto de cafe"
+              />
+            </div>
+            <div>
+              <img
+                src="./img/painting-of-filter-coffee.jpg"
+                alt="foto de cafe"
+              />
+            </div>
+          </div>
+          <button class="btn-secondary">Ver Galeria</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="d-flex justify-content-around">
+        <div>
+          <p class="footer-title">Ubicacion</p>
+          <p>Calle falsa 1234, Buenos Aires</p>
+        </div>
+        <div>
+          <p class="footer-title">Contacto</p>
+          <p>11 2345 - 6789</p>
+          <p>contacto@cafesuarez.com</p>
+        </div>
+        <div>
+          <p class="footer-title">Seguinos en Redes</p>
+          <div class="d-flex justify-content-around">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-square-facebook"></i>
+          </div>
+        </div>
+      </div>
+      <div class="copy">
+        <p>Joaquin Di cio © Todos los derechos reservados</p>
+      </div>
+    </footer>
+  </body>
+</html>
