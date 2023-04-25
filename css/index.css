@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap");
+@import url("./utilities.css");
+@import url("./home.css");
+@import url("./galeria.css");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+  scroll-behavior: smooth;
+  scroll-margin-top: 90px;
+}
+
+/* STYLES APPLIED IN EVERY PAGE */
+
+/* NAVBAR */
+header.navbar {
+  position: fixed;
+  top: 0;
+  z-index: +1;
+  width: 100%;
+  padding: 10px 80px;
+  background-color: transparent;
+  transition: 0.5s;
+}
+header.on-scroll {
+  background-color: var(--main-color);
+  box-shadow: 1px 1px 10px black;
+  transition: 1s;
+}
+header.on-scroll nav ul li.navbar-item:hover a {
+  background-color: #ffff;
+  color: var(--main-color);
+  transition: 0.5s;
+  color: var(--main-color);
+}
+h1.brand {
+  color: #ffff;
+  font-size: 1.8em;
+  cursor: pointer;
+}
+.navbar i {
+  color: #ffff;
+  font-size: 2em;
+  padding-left: 10px;
+  padding-bottom: 7px;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: #ffff;
+  text-decoration: none;
+}
+li.navbar-item a {
+  font-size: 1em;
+  padding: 7px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #ffff;
+  font-weight: 500;
+  border-radius: 30px;
+}
+li.navbar-item.selected a,
+li.navbar-item:hover a {
+  background-color: var(--main-color);
+  transition: 0.5s;
+}
+h2.section-title {
+  font-weight: bolder;
+  font-size: 2.2em;
+  color: var(--dark-text);
+  margin: 2px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: var(--main-color);
+  text-align: center;
+  padding: 30px 40px 20px 40px;
+}
+footer .footer-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+footer .fa-brands {
+  color: #fff;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+div.copy {
+  width: 100%;
+}
+footer div.copy p {
+  font-size: 0.85em;
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 45px;
+}

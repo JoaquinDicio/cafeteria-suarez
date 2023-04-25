@@ -1,0 +1,129 @@
+/* HOME INTRO */
+section.home-intro {
+  background-image: url("../img/Coffee-Wallpaper-44-5760x3840.jpg");
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  background-attachment: fixed;
+}
+div.bg-opaco {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* HOME CONTENT */
+div.home-content > h2,
+p {
+  color: #ffff;
+}
+div.home-content > h2 {
+  font-size: 3.5em;
+  padding-bottom: 10px;
+}
+div.home-content {
+  background-color: transparent;
+  height: 100%;
+}
+div.underline {
+  width: 100px;
+  height: 5px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: var(--main-color);
+}
+a.more-info {
+  margin-top: 50px;
+  padding: 18px 50px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+/* HOME SECTION COFFE TYPES */
+section.coffe-types {
+  background-color: var(--secondary-color);
+  padding: 80px 60px 130px 60px;
+}
+div.coffe-types-content {
+  margin-top: 50px;
+  max-width: 1200px;
+}
+
+section.coffe-types p {
+  color: var(--dark-text);
+}
+div.coffe-types-img {
+  flex-grow: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 60px;
+}
+div.coffe-types-img img {
+  width: 100%;
+}
+div.coffe-types-info {
+  flex: 0 0 50%;
+}
+
+/* SECTION DIVIDER */
+div.section-divider {
+  height: 200px;
+  width: 100%;
+  background-image: url("https://t4.ftcdn.net/jpg/02/50/86/69/360_F_250866913_Ypugnu1Lal5rfIevOSkwyHaK8WoPItuh.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+div.bg-section-divider {
+  background-color: #000000db;
+  width: 100%;
+  height: 100%;
+}
+.section-divider p {
+  color: #919191;
+}
+p.section-divider-text {
+  font-size: 1.7em;
+  font-weight: bolder;
+  color: #ffff;
+}
+div.section-divider a {
+  padding: 15px 40px;
+  border-radius: 30px;
+  margin-left: 100px;
+}
+
+/* SECTION HOME GALLERY */
+section.home-gallery {
+  padding: 100px 60px;
+  width: 100%;
+  background-color: var(--secondary-color);
+}
+div.home-gallery-content {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.home-gallery h2 {
+  font-size: 2em;
+}
+
+.home-mini-gallery {
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.home-mini-gallery div {
+  flex: 0 0 48%;
+  overflow: hidden;
+  border-radius: 20px;
+  margin: 5px;
+}
+.home-mini-gallery div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

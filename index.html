@@ -15,7 +15,7 @@
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
     <!-- my css -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <!-- my js -->
     <script src="./js/main.js"></script>
     <!-- favicon -->
@@ -39,15 +39,15 @@
       </div>
       <nav>
         <ul class="d-flex">
-          <li class="navbar-item selected"><a href="./index.html">Home</a></li>
-          <li class="navbar-item">Nosotros</li>
-          <li class="navbar-item"><a href="./galeria.html">Geleria</a></li>
-          <li class="navbar-item">Contacto</li>
+          <li class="navbar-item"><a href="#home">Home</a></li>
+          <li class="navbar-item"><a href="#gallery">Galeria</a></li>
+          <li class="navbar-item"><a>Nosotros</a></li>
+          <li class="navbar-item"><a>Contacto</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="home-intro">
+      <section class="home-intro" id="home">
         <div class="bg-opaco">
           <div
             class="home-content d-flex flex-column justify-content-center align-items-center"
@@ -55,11 +55,13 @@
             <h2 class="m-0 text-center">Cafe Suarez</h2>
             <p class="m-0 text-center">Experimentá el amor al primer sorbo</p>
             <div class="underline"></div>
-            <button class="btn-classic more-info">Saber mas</button>
+
+            <a href="#coffe-types" class="btn-classic more-info">Saber más</a>
           </div>
         </div>
       </section>
       <section
+        id="coffe-types"
         class="coffe-types d-flex justify-content-center align-items-center flex-column"
       >
         <div class="d-flex flex-column align-items-center coffe-types-header">
@@ -72,7 +74,7 @@
           <div class="coffe-types-img">
             <img src="./img/fotohecha.png" alt="Bolsas de cafe distintas" />
           </div>
-          <div class="coffe-types-info flex-column">
+          <div class="coffe-types-info flex-column d-flex align-items-start">
             <div>
               <h3>Cafe Molido Italiano</h3>
               <p>
@@ -101,7 +103,7 @@
                 experiencia de café fuerte y auténtica.
               </p>
             </div>
-            <button class="btn-secondary">Ver todos</button>
+            <a class="btn-secondary">Ver todos</a>
           </div>
         </div>
       </section>
@@ -118,10 +120,10 @@
               el amor al primer sorbo.
             </p>
           </div>
-          <button class="btn-classic">Ver Ofertas</button>
+          <a class="btn-classic">Ver Ofertas</a>
         </div>
       </div>
-      <section class="home-gallery">
+      <section class="home-gallery" id="gallery">
         <div
           class="home-gallery-content d-flex justify-content-center align-items-center flex-column"
         >
@@ -131,25 +133,28 @@
           <div class="underline"></div>
           <div class="home-mini-gallery d-flex justify-content-center">
             <div>
-              <img src="./img/cafe-granos.webp" alt="foto de cafe" />
+              <img src="./img/cafe-granos.webp" alt="Granos de cafe" />
             </div>
             <div>
-              <img src="./img/coffee-171653__340.jpg" alt="foto de cafe" />
+              <img
+                src="./img/coffee-171653__340.jpg"
+                alt="Granos de cafe y una taza"
+              />
             </div>
             <div>
               <img
                 src="./img/istockphoto-1128647043-612x612.jpg"
-                alt="foto de cafe"
+                alt="Mujer contenta tomando cafe"
               />
             </div>
             <div>
               <img
                 src="./img/painting-of-filter-coffee.jpg"
-                alt="foto de cafe"
+                alt="Granos de cafe y una taza blanca"
               />
             </div>
           </div>
-          <button class="btn-secondary">Ver Galeria</button>
+          <a href="./galeria.html" class="btn-secondary">Ver Galeria</a>
         </div>
       </section>
     </main>

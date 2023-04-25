@@ -15,7 +15,7 @@
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
     <!-- my css -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <!-- my js -->
     <script src="./js/main.js"></script>
     <!-- favicon -->
@@ -27,23 +27,119 @@
     />
     <title>Home - Cafe Suarez</title>
   </head>
-  <body>
+
+  <body onload="setGallery()">
     <header
       id="header"
-      class="navbar d-flex justify-content-between align-items-center"
+      class="navbar on-scroll d-flex justify-content-between align-items-center"
     >
       <div class="d-flex align-items-center">
-        <h1 class="brand">Cafe Suarez</h1>
+        <h1 class="brand"><a href="./index.html"> Cafe Suarez </a></h1>
         <i class="fa-solid fa-mug-hot"></i>
       </div>
       <nav>
         <ul class="d-flex">
-          <li class="navbar-item selected">Home</li>
-          <li class="navbar-item">Nosotros</li>
-          <li class="navbar-item">Galeria</li>
-          <li class="navbar-item">Contacto</li>
+          <li class="navbar-item"><a href="./index.html">Home</a></li>
+          <li class="navbar-item"><a>Galeria</a></li>
+          <li class="navbar-item"><a>Nosotros</a></li>
+          <li class="navbar-item"><a>Contacto</a></li>
         </ul>
       </nav>
     </header>
+    <main>
+      <section class="gallery d-flex align-items-center flex-column">
+        <h2>Buen aspecto, buen sabor.</h2>
+        <div class="underline"></div>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img
+              class="gallery-img"
+              src="./img/cafecito.jpg"
+              alt="Cafe con leche con un dibujo hecho en la espuma"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              class="gallery-img"
+              src="./img/cafe-granos.webp"
+              alt="Granos de cafe y un cafe negro en el medio"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              class="gallery-img"
+              src="./img/painting-of-filter-coffee.jpg"
+              alt="Una taza y granos de cafe"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              class="gallery-img"
+              src="./img/istockphoto-1128647043-612x612.jpg"
+              alt="Una mujer feliz tomando cafe"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              class="gallery-img"
+              src="./img/interior-cafeteria-vacio-dia-cafeteria-vintage-brillante-sol-matutino-traves-ventana-ciudad-moderna-maquina-terminal-punto-venta-mostrador-madera-al-lado-postre-dulce-macaron_.avif"
+              alt="Una foto del mostrador de nuestra cafeteria"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              class="gallery-img"
+              src="./img/cafeartesanal.jpg"
+              alt="Granos de cafe"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              class="gallery-img"
+              src="./img/cafeteria.webp"
+              alt="Una foto del motrador de nuestra cafeteria"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              class="gallery-img"
+              src="./img/cafe-gourmet.jpg"
+              alt="Cafe italiano cortado en un vaso metalico"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              class="gallery-img"
+              src="./img/coffee-171653__340.jpg"
+              alt="Granos de cafe saliendo de una taza que se cayo"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="d-flex justify-content-around">
+        <div>
+          <p class="footer-title">Ubicacion</p>
+          <p>Calle falsa 1234, Buenos Aires</p>
+        </div>
+        <div>
+          <p class="footer-title">Contacto</p>
+          <p>11 2345 - 6789</p>
+          <p>contacto@cafesuarez.com</p>
+        </div>
+        <div>
+          <p class="footer-title">Seguinos en Redes</p>
+          <div class="d-flex justify-content-around">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-square-facebook"></i>
+          </div>
+        </div>
+      </div>
+      <div class="copy">
+        <p>Joaquin Di cio © Todos los derechos reservados</p>
+      </div>
+    </footer>
   </body>
 </html>
